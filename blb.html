@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="blb.css"
+  <title>Bulb on/off</title>
+</head>
+<body>
+  
+  <div id="bulb">
+    <img v-bind:src="bulbImage" alt="Bulb" v-on:click="toggleBulb" style="cursor: pointer;">
+    <button v-on:click="toggleBulb">Switch</button>
+
+  </div>
+
+  <script src="https://unpkg.com/vue@3.2.20/dist/vue.global.js"></script>
+  <script src="blb.js"></script>
+</body>
+</html>
